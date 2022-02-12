@@ -1,12 +1,30 @@
-const lengthRoom1 = 8
-const widthRoom1 = 4
-const squareRoom1 = lengthRoom1 * widthRoom1
+btn1.onclick = function () {
+  document.body.style.backgroundColor = 'red'
+}
 
+btn2.onclick = function () {
+  btn1.style.color = 'orange'
+  btn3.style.color = 'orange'
+}
 
-const lengthRoom2 = 10
-const widthRoom2 = 5
-const squareRoom2 = lengthRoom2 * widthRoom2
+btn3.onclick = function () {
+  btn7.style.color = 'red'
+}
 
-const squareFlat = squareRoom1 + squareRoom2
+btn4.onclick = function () {
+  grass.style.display = 'block'
+}
 
-alert(squareFlat)
+btn5.onclick = function () {
+  const clonedNode = document.getElementById("btn5").cloneNode(true);
+  document.querySelector("body").appendChild(clonedNode);
+}
+
+btn6.onclick = function () {
+  btn1.style.display = 'none'
+}
+
+btn7.onclick = function () {
+  btn1.style.display = 'inline'
+  btn1.innerHTML = "Єкнопка"
+}
